@@ -73,7 +73,7 @@ class NeoenergiaAutomation:
         pdf_files = [f for f in os.listdir(output_dir) if f.endswith('.pdf')]
         
         if pdf_files:
-            self.logger.info(f"Arquivos PDF encontrados: {pdf_files}. Fechando o navegador.")
+            self.logger.info(f"Arquivos PDF encontrados: {pdf_files}. Fechando o navegador...")
             self.browser.quit()
         else:
             self.logger.warning("Nenhum arquivo PDF encontrado na pasta /output.")
